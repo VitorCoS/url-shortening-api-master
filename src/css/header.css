@@ -1,0 +1,76 @@
+@import url(./variables.css);
+
+.header_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 30px 30px;
+    width: 1440px;
+    height: 100px;
+    /* background-color: rgb(255, 123, 0); */
+}
+
+.header_content *{
+    font-size: 16px;
+}
+
+#img_logo:hover{
+    cursor:pointer;
+}
+
+
+#navigator{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.topics_list{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+
+.buttons_nav{
+    width: 12%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
+#button_login{
+   background-color: transparent;
+   border: none;
+
+}
+
+.topics_list li, .buttons_nav>button {
+    color: var(--Grayish-Violet);  
+}
+
+.topics_list li:hover, .buttons_nav>button:hover {
+    color: var(--Very-Dark-Violet);  
+    cursor: pointer;
+}
+
+#button_signUp{
+    background-color: var(--Cyan);
+    height: 35px;
+    width: 100px;
+    border-color: transparent;
+    color: white;
+    border-radius: 30px;
+}
+
+#button_signUp:hover{
+    background-color: var(--Light-Cyan);
+}
+
+
+
+
+
+
+

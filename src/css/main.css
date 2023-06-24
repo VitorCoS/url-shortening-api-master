@@ -1,0 +1,69 @@
+@import url(./reset.css);
+@import url(./variables.css);
+@import url(./header.css);
+
+
+body{
+    /* background-color: bisque; */
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+}
+
+.main_container{
+    display: flex;
+    margin: auto;
+    padding: 30px 30px;
+    width: 1440px;
+    /* background-color: bisque; */
+}
+
+#presentation{
+    display: flex;
+    margin: auto;
+    padding: 30px 30px;
+    width: 1440px;
+    position: relative;
+}
+
+.infos_presentation{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 480px;
+  
+}
+
+#first_contentP h1{
+    font-size: 4.5em;
+    color: var(--Very-Dark-Violet);
+    line-height: 1.2em;
+}
+
+#first_contentP h2{
+    font-size: 1.3em;
+    color: var(--Grayish-Violet);
+  
+}
+
+#get_started{
+    margin-top: 30px;
+    background-color: var(--Cyan);
+    height: 45px;
+    width: 180px;
+    border-color: transparent;
+    color: white;
+    border-radius: 30px;
+    font-size: 1em;
+}
+
+#get_started:hover{
+    cursor: pointer;
+    background-color: var(--Light-Cyan);
+}
+
+#img_working{
+   position: absolute;
+   right: -20%;
+
+}

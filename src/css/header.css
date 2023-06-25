@@ -6,9 +6,9 @@
     justify-content: space-between;
     margin: auto;
     padding: 30px 30px;
-    width: 1440px;
+    width: 1160px;
     height: 100px;
-    /* background-color: rgb(255, 123, 0); */
+    background-color: rgb(255, 123, 0);
 }
 
 .header_content *{
@@ -33,11 +33,10 @@
 }
 
 .buttons_nav{
-    width: 12%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 30px;
  
 }
 #button_login{

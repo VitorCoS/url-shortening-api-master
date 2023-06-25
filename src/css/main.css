@@ -3,67 +3,228 @@
 @import url(./header.css);
 
 
-body{
-    /* background-color: bisque; */
-    height: 100vh;
-    width: 100vw;
-    margin: auto;
-}
 
-.main_container{
-    display: flex;
+body {
+    background-color: rgb(41, 247, 13);
     margin: auto;
-    padding: 30px 30px;
-    width: 1440px;
-    /* background-color: bisque; */
-}
-
-#presentation{
     display: flex;
-    margin: auto;
-    padding: 30px 30px;
-    width: 1440px;
+    flex-direction: column;
     position: relative;
 }
 
-.infos_presentation{
+/* Conteudo principal */
+
+.main_container {
     display: flex;
-    align-items: center;
-    width: 50%;
-    height: 480px;
-  
+    margin: auto;
+    padding: 30px 30px;
+    flex-direction: column;
+    width: 1160px;
+    background-color: bisque;
 }
 
-#first_contentP h1{
+
+
+/* First-Card ///////////////////////////////////////////////////////////////////////// */
+
+#presentation {
+    background-color: rgb(13, 122, 247);
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+.infos_presentation {
+    display: flex;
+    align-items: center;
+    width: 55%;
+    height: 480px;
+}
+
+#first_contentP h1 {
     font-size: 4.5em;
     color: var(--Very-Dark-Violet);
     line-height: 1.2em;
 }
 
-#first_contentP h2{
+#first_contentP h2 {
+    width: 590px;
     font-size: 1.3em;
     color: var(--Grayish-Violet);
-  
 }
 
-#get_started{
+#get_started {
     margin-top: 30px;
     background-color: var(--Cyan);
-    height: 45px;
+    height: 55px;
     width: 180px;
     border-color: transparent;
     color: white;
     border-radius: 30px;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
-#get_started:hover{
+#get_started:hover {
     cursor: pointer;
     background-color: var(--Light-Cyan);
 }
 
-#img_working{
-   position: absolute;
-   right: -20%;
+.div_image {
+    width: 45%;
+    position: relative;
 
+}
+
+#img_working {
+    padding-left: 50px;
+    position: absolute;
+
+}
+
+/* /////////////////////////////////////////////////////////////////////// */
+
+/* Input do link */
+.div_short_link {
+    width: 1100px;
+    background-color: var(--Dark-Violet);
+    background-image: url('../../images/bg-shorten-desktop.svg');
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    height: 165px;
+    padding: 50px 60px;
+    transform: translateY(-84px);
+    z-index: 2;
+
+}
+
+.div_short_link * {
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    font-size: 23px;
+}
+
+.div_short_link input {
+    width: 770px;
+    padding: 33px;
+}
+
+.div_short_link button {
+    width: 188px;
+    background-color: var(--Cyan);
+    color: white;
+}
+
+.div_short_link button:hover {
+    cursor: pointer;
+    background-color: var(--Light-Cyan);
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+
+/* Sessão informativa Advanced Statistics */
+
+.adv_statics {
+    background-color: #EFF0F5;
+    height: 100vh;
+    bottom: -12%;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    gap: 40px;
+}
+
+#div_adv_static {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 560px;
+    gap: 15px;
+}
+
+#div_adv_static h1 {
+    font-size: 2.3em;
+    color: var(--Very-Dark-Violet);
+}
+
+#div_adv_static h2 {
+    color: var(--Grayish-Violet);
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+/* //////////////////////////////////////////////////////////////////////////// */
+
+/* Conteúdo informativo em cascata  */
+.cascade {
+    display: flex;
+    width: 1160px;
+    height: 600px;
+    background-color: rgb(252, 72, 72);
+    padding: 30px;
+    margin-top: 30px;
+    
+}
+
+#cascade1 {
+    align-self: flex-start;
+}
+
+#cascade2 {
+    align-self: center;
+}
+
+#cascade3 {
+    align-self: flex-end;
+}
+
+.rectangle{
+    align-self: center;
+    width: 30px;
+    height: 8px;
+    background-color: var(--Light-Cyan);
+
+}
+
+.configuration_cascade{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 350px;
+    height: 270px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.configuration_cascade h1{
+    font-size: 1.4em;
+    color: var(--Very-Dark-Violet);
+}
+
+.configuration_cascade h2{
+    color: var(--Grayish-Violet);
+    padding-top: 20px;
+    font-size: 0.9em;
+    line-height: 1.6em;
+    font-weight: 300;
+}
+
+
+.img_icon_background{
+    background-color: var(--Dark-Violet);
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -40px;
 }

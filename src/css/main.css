@@ -4,23 +4,13 @@
 
 
 
-body {
-    background-color: rgb(41, 247, 13);
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
 /* Conteudo principal */
 
 .main_container {
     display: flex;
     margin: auto;
-    padding: 30px 30px;
     flex-direction: column;
-    width: 1160px;
-    background-color: bisque;
+    overflow: hidden;
 }
 
 
@@ -28,10 +18,11 @@ body {
 /* First-Card ///////////////////////////////////////////////////////////////////////// */
 
 #presentation {
-    background-color: rgb(13, 122, 247);
+    /* background-color: rgb(13, 122, 247); */
     display: flex;
+    padding: 30px;
     margin: auto;
-    width: 100%;
+    width: 1160px;
 }
 
 .infos_presentation {
@@ -53,7 +44,7 @@ body {
     color: var(--Grayish-Violet);
 }
 
-#get_started {
+.get_started {
     margin-top: 30px;
     background-color: var(--Cyan);
     height: 55px;
@@ -64,20 +55,20 @@ body {
     font-size: 1.2em;
 }
 
-#get_started:hover {
+.get_started:hover {
     cursor: pointer;
     background-color: var(--Light-Cyan);
 }
 
 .div_image {
     width: 45%;
-    position: relative;
-
+   
 }
 
 #img_working {
     padding-left: 50px;
-    position: absolute;
+
+ 
 
 }
 
@@ -128,13 +119,14 @@ body {
 
 .adv_statics {
     background-color: #EFF0F5;
-    height: 100vh;
+    height: auto;
     bottom: -12%;
     z-index: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
+    padding-bottom: 60px;
     gap: 40px;
 }
 
@@ -163,8 +155,8 @@ body {
 .cascade {
     display: flex;
     width: 1160px;
-    height: 600px;
-    background-color: rgb(252, 72, 72);
+    height: 430px;
+    /* background-color: rgb(252, 72, 72); */
     padding: 30px;
     margin-top: 30px;
     
@@ -228,3 +220,107 @@ body {
     position: absolute;
     top: -40px;
 }
+
+
+/* BOOST YOUR LINKS TODAY */
+
+.boost{
+    background-color: var(--Dark-Violet);
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 228px;
+    gap: 30px;
+    background-image: url('../../images/bg-boost-desktop.svg');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.boost h1{
+    font-size: 2em;
+    color: whitesmoke;
+
+}
+
+.get_started_boost {
+
+    background-color: var(--Cyan);
+    height: 45px;
+    width: 170px;
+    border-color: transparent;
+    color: white;
+    border-radius: 30px;
+    font-size: 1.2em;
+}
+
+.get_started_boost:hover {
+    cursor: pointer;
+    background-color: var(--Light-Cyan);
+}
+
+
+.rodape{
+    background-color: var(--Very-Dark-Violet);
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    height: 272px;
+    padding: 70px 0px 52px;
+    
+}
+
+.list_rodape{
+    list-style-type: none;
+    color: var(--Grayish-Violet);
+}
+
+
+.title_list h1{
+    font-size: 1em;
+    padding-bottom: 20px;
+    color: #EFF0F5;
+}
+
+.list_rodape li:hover{
+    cursor: pointer;
+
+    color: var(--Light-Cyan);
+}
+
+.div_list{
+    width: 555px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#img_logo_rodape{
+    width: 121px;
+    height: 33px;
+    color: #EFF0F5;
+}
+
+.rodape_content{
+    display: flex;
+    width: 1160px;
+    justify-content: space-between;
+}
+
+.icon_img{
+    width:  25px;
+    height: 25px;
+}
+
+.icon_img:hover{
+    cursor: pointer;
+}
+
+.icon_links{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+
+}
+

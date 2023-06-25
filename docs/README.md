@@ -1,5 +1,12 @@
 # Frontend Mentor - Shortly URL shortening API Challenge
 
+https://api.shrtco.de/v2/shorten?url=https://www.example.com/blog/article/how-to-shorten-urls-for-api-testing
+
+
+https://www.example.com/blog/article/how-to-shorten-urls-for-api-testing
+https://www.example.com/products/sale/?category=electronics&sort=price_desc&page=2
+https://www.example.com/news/article/2023/06/25/openai-launches-gpt-4-0/
+https://api.shrtco.de/v2/shorten?url=example.org/very/long/link.html
 ![Design preview for the Shortly URL shortening API coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋

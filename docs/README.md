@@ -2,6 +2,7 @@
 
 https://api.shrtco.de/v2/shorten?url=https://www.example.com/blog/article/how-to-shorten-urls-for-api-testing
 
+throw new Error('Erro ao obter os dados. Código de status:' + response.status)
 
 https://www.example.com/blog/article/how-to-shorten-urls-for-api-testing
 https://www.example.com/products/sale/?category=electronics&sort=price_desc&page=2

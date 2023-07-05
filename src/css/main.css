@@ -186,12 +186,22 @@
 @keyframes creation {
     0% {
         opacity: 0;
+ 
+
     }
 
     100% {
         opacity: 1;
+
     }
+
+    
+
+
 }
+
+
+
 
 
 
@@ -567,11 +577,56 @@
         padding: 30px;
         align-items: center;
         justify-content: space-between;
-        
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-name: creation_up;
 
     }
 
+    .animation_down{
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-name: creation_down;
+    }
 
+    @keyframes creation_up {
+        0% {
+            opacity: 0;
+            transform: translateY(90px);
+     
+    
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+    
+        }
+    
+        
+    
+    
+    }
+
+    
+    @keyframes creation_down {
+        0% {
+            opacity: 1;
+            transform: translateY(0px);
+     
+    
+        }
+    
+        100% {
+            opacity: 0;
+            transform: translateY(90px);
+    
+        }
+    
+        
+    
+    
+    }
     
     .topics_list, .buttons_nav{
         text-align: center;

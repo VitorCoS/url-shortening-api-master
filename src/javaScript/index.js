@@ -143,7 +143,11 @@ function show_modal() {
 
     if (modal_exist[0] != undefined) {
         console.log('entrei')
-        presentation.removeChild(modal_exist[0])
+        modal_exist[0].style.animationName = "creation_down";
+        setTimeout(function() {
+             presentation.removeChild(modal_exist[0])
+         }, 650);
+       
     }
     else {
 

@@ -1,10 +1,24 @@
-const input_link = document.getElementById('input_link')
-const div_short_link = document.getElementsByClassName('div_short_link')
-const text_add = document.getElementById('add_valid_link')
-const adv_st = document.getElementsByClassName('adv_statics')
-const last_element = document.getElementById('div_adv_static')
+const input_link = document.getElementById('input_link');
+const div_short_link = document.getElementsByClassName('div_short_link');
+const text_add = document.getElementById('add_valid_link');
+const adv_st = document.getElementsByClassName('adv_statics');
+const last_element = document.getElementById('div_adv_static');
+const menu_hamb = document.getElementById('img_hamb');
 
 
+function kill_modal() {
+
+
+    if (window.innerWidth > 700) {
+
+        const modal_exist1 = document.getElementsByClassName('modal_list');
+
+        if (modal_exist1[0] != undefined) {
+            presentation.removeChild(modal_exist1[0])
+        }
+    }
+}
+window.addEventListener("resize", kill_modal);
 
 
 async function get_short_api() {
@@ -77,6 +91,7 @@ function create_div_short(link, data) {
     butt.addEventListener('click', function () {
         var elemento_pai = butt.parentElement;
         var copy = elemento_pai.querySelector('.link_b').innerHTML;
+        console.log(navigator)
         navigator.clipboard.writeText(copy);
         butt.innerHTML = 'Copied!';
         butt.style.background = '#3B3054';
@@ -111,5 +126,38 @@ function create_div_short(link, data) {
         adv_st[0].removeChild(last_div_short[2])
         adv_st[0].insertBefore(div_short, qnt_links[0])
     }
+
+}
+
+
+
+function show_modal() {
+
+    const list_navigation = document.getElementsByClassName('topics_list');
+    const button_nav = document.getElementsByClassName('buttons_nav');
+    const div_modal_list = document.createElement('div')
+    const line = document.createElement('div')
+    const presentation = document.getElementById('presentation');
+    const modal_exist = document.getElementsByClassName('modal_list');
+
+
+    if (modal_exist[0] != undefined) {
+        console.log('entrei')
+        presentation.removeChild(modal_exist[0])
+    }
+    else {
+
+        const list_navigation_clone = list_navigation[0].cloneNode(true)
+        const button_nav_clone = button_nav[0].cloneNode(true)
+        line.id = "line";
+        div_modal_list.classList.add('modal_list')
+        div_modal_list.appendChild(list_navigation_clone);
+        div_modal_list.appendChild(line)
+        div_modal_list.appendChild(button_nav_clone);
+        presentation.appendChild(div_modal_list)
+        list_navigation_clone.classList.add('unhide')
+        button_nav_clone.classList.add('unhide')
+    }
+
 
 }
